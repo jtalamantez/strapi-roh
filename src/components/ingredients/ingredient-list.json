@@ -1,0 +1,40 @@
+{
+  "collectionName": "components_ingredients_ingredient_lists",
+  "info": {
+    "displayName": "Ingredient List",
+    "icon": "bulletList",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Quantity": {
+      "type": "decimal"
+    },
+    "Item": {
+      "type": "string"
+    },
+    "Units": {
+      "type": "enumeration",
+      "enum": [
+        "g",
+        "ea",
+        "oz",
+        "mg",
+        "#lb",
+        "qt",
+        "cup",
+        "tsp",
+        "tbsp",
+        "TT",
+        "turns",
+        "pinch"
+      ],
+      "default": "g"
+    },
+    "Recipe": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::recipe.recipe"
+    }
+  }
+}

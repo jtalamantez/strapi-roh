@@ -1,0 +1,24 @@
+{
+  "kind": "collectionType",
+  "collectionName": "leadership_logs",
+  "info": {
+    "singularName": "leadership-log",
+    "pluralName": "leadership-logs",
+    "displayName": "Leadership Log"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "fields": {
+      "displayName": "Fields",
+      "type": "component",
+      "repeatable": true,
+      "component": "fields.fields"
+    }
+  }
+}

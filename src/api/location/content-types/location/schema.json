@@ -1,0 +1,59 @@
+{
+  "kind": "collectionType",
+  "collectionName": "locations",
+  "info": {
+    "singularName": "location",
+    "pluralName": "locations",
+    "displayName": "Location",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "client": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::client.client",
+      "inversedBy": "locations"
+    },
+    "checklist": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::checklist.checklist",
+      "inversedBy": "locations"
+    },
+    "location": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::recipe.recipe",
+      "inversedBy": "Location"
+    },
+    "line_build": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::line-build.line-build",
+      "inversedBy": "Location"
+    },
+    "beverage_build": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::beverage-build.beverage-build",
+      "inversedBy": "Location"
+    },
+    "Logo": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": false
+    },
+    "IPAddress": {
+      "type": "string"
+    }
+  }
+}

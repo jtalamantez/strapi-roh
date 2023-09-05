@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_allergens_allergens",
+  "info": {
+    "displayName": "Allergens",
+    "icon": "information"
+  },
+  "options": {},
+  "attributes": {
+    "Allergen": {
+      "type": "string"
+    }
+  }
+}

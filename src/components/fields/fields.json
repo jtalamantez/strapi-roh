@@ -1,0 +1,13 @@
+{
+  "collectionName": "components_fields_fields",
+  "info": {
+    "displayName": "Fields",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    }
+  }
+}

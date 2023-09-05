@@ -1,0 +1,40 @@
+{
+  "kind": "collectionType",
+  "collectionName": "checklists",
+  "info": {
+    "singularName": "checklist",
+    "pluralName": "checklists",
+    "displayName": "Checklist",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "Tasks": {
+      "type": "component",
+      "repeatable": true,
+      "component": "checklist.checklist"
+    },
+    "locations": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::location.location",
+      "mappedBy": "checklist"
+    },
+    "DayPart": {
+      "type": "enumeration",
+      "enum": [
+        "AM",
+        "PM",
+        "BRUNCH",
+        "LUNCH",
+        "DINNER"
+      ]
+    }
+  }
+}

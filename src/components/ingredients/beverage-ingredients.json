@@ -1,0 +1,29 @@
+{
+  "collectionName": "components_ingredients_beverage_ingredients",
+  "info": {
+    "displayName": "Beverage Ingredients",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "Quantity": {
+      "type": "decimal"
+    },
+    "Unit": {
+      "type": "enumeration",
+      "enum": [
+        "oz",
+        "ml",
+        "l",
+        "g",
+        "tsp",
+        "tbsp",
+        "To Fill"
+      ],
+      "default": "oz"
+    },
+    "Item": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,74 @@
+{
+	"version": 2,
+	"data": {
+		"api::recipe.recipe": {
+			"3": {
+				"id": 3,
+				"createdAt": "2023-07-12T03:31:43.326Z",
+				"updatedAt": "2023-07-12T03:38:22.599Z",
+				"publishedAt": null,
+				"Name": "EVERYTHING SOURDOUGH BREADCRUMBS",
+				"Method": "Preheat oven to 300F, high fan.\nCut the bread into 3/4\" to 1\" cubes, including the crust.\nToss sourdough cubes with garlic oil and seasoning\nArrange in single layer on hotel pans.\nToast for 15 minutes.\nStir and toast for an additional 8-10 minutes or until dry and very crisp. Watch carefully. Do not burn.\nRemove from oven and allow to cool until room temperature.\nPulse in batches using the Robot Coupe. Breadcrumbs should have a mixture of fine to coarse pieces, but no large chunks.\nStore breadcrumbs in a cambro with a desiccant pack.",
+				"Notes": "ALLERGEN : ALLUIM, BLACK PEPPER, GLUTEN, WHEAT",
+				"clients": [
+					2,
+					1
+				],
+				"Ingredients": [
+					1,
+					2,
+					3
+				],
+				"createdBy": null,
+				"updatedBy": null
+			}
+		},
+		"plugin::users-permissions.user": {},
+		"api::client.client": {
+			"1": {
+				"id": 1,
+				"Client": "Victory Ranch",
+				"createdAt": "2023-07-08T19:15:01.939Z",
+				"updatedAt": "2023-07-08T19:16:16.570Z",
+				"publishedAt": "2023-07-08T19:16:16.568Z",
+				"users_permissions_user": null,
+				"recipe": 3,
+				"createdBy": null,
+				"updatedBy": null
+			},
+			"2": {
+				"id": 2,
+				"Client": "Joe's Subs",
+				"createdAt": "2023-07-08T19:16:05.073Z",
+				"updatedAt": "2023-07-08T19:16:11.403Z",
+				"publishedAt": "2023-07-08T19:16:11.399Z",
+				"users_permissions_user": null,
+				"recipe": 3,
+				"createdBy": null,
+				"updatedBy": null
+			}
+		},
+		"ingredients.ingredient-list": {
+			"1": {
+				"id": 1,
+				"Quantity": 1000,
+				"Unit": "G",
+				"Item": "SOURDOUGH BREAD"
+			},
+			"2": {
+				"id": 2,
+				"Quantity": 150,
+				"Unit": "G",
+				"Item": "GARLIC OIL "
+			},
+			"3": {
+				"id": 3,
+				"Quantity": 100,
+				"Unit": "G",
+				"Item": "EVERYTHING BAGEL SEASONING"
+			}
+		},
+		"plugin::users-permissions.permission": {},
+		"plugin::users-permissions.role": {}
+	}
+}

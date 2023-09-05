@@ -1,0 +1,68 @@
+{
+  "kind": "collectionType",
+  "collectionName": "beverage_builds",
+  "info": {
+    "singularName": "beverage-build",
+    "pluralName": "beverage-builds",
+    "displayName": "Beverage Build",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Name": {
+      "type": "string"
+    },
+    "BuildSpecs": {
+      "type": "richtext"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Allergens": {
+      "type": "component",
+      "repeatable": true,
+      "component": "allergens.allergens"
+    },
+    "Location": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::location.location",
+      "mappedBy": "beverage_build"
+    },
+    "Ingredients": {
+      "type": "component",
+      "repeatable": true,
+      "component": "ingredients.beverage-ingredients"
+    },
+    "Media": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "Glass": {
+      "type": "string"
+    },
+    "Garnish": {
+      "type": "string"
+    },
+    "Ice": {
+      "type": "enumeration",
+      "enum": [
+        "Crushed",
+        "Cubed",
+        "Big Ice Cube",
+        "Sphere Ice",
+        "Moon Ice"
+      ]
+    }
+  }
+}
