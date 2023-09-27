@@ -17,43 +17,50 @@
     },
     "client": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "oneToOne",
       "target": "api::client.client",
-      "inversedBy": "locations"
+      "inversedBy": "location"
     },
-    "checklist": {
+    "checklists": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::checklist.checklist",
       "inversedBy": "locations"
     },
-    "location": {
+    "line_builds": {
       "type": "relation",
-      "relation": "manyToOne",
-      "target": "api::recipe.recipe",
-      "inversedBy": "Location"
-    },
-    "line_build": {
-      "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::line-build.line-build",
-      "inversedBy": "Location"
+      "inversedBy": "Locations"
     },
-    "beverage_build": {
+    "beverage_builds": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "api::beverage-build.beverage-build",
-      "inversedBy": "Location"
+      "inversedBy": "Locations"
     },
     "Logo": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
       "allowedTypes": [
         "images"
-      ],
-      "type": "media",
-      "multiple": false
+      ]
     },
     "IPAddress": {
       "type": "string"
+    },
+    "recipes": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::recipe.recipe",
+      "inversedBy": "locations"
+    },
+    "leadership_logs": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::leadership-log.leadership-log",
+      "inversedBy": "locations"
     }
   }
 }

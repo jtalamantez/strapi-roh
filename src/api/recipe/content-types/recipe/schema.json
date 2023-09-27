@@ -15,13 +15,8 @@
     "Name": {
       "type": "string",
       "required": true,
-      "unique": true
-    },
-    "Location": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::location.location",
-      "mappedBy": "location"
+      "unique": true,
+      "regex": "^[A-Z\\s.,'\"]+$"
     },
     "Notes": {
       "type": "text"
@@ -50,6 +45,12 @@
     },
     "Method": {
       "type": "richtext"
+    },
+    "locations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::location.location",
+      "mappedBy": "recipes"
     }
   }
 }

@@ -20,9 +20,9 @@
       "relation": "oneToOne",
       "target": "plugin::users-permissions.user"
     },
-    "locations": {
+    "location": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "oneToOne",
       "target": "api::location.location",
       "mappedBy": "client"
     }

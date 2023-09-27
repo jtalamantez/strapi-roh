@@ -9,6 +9,10 @@
   "attributes": {
     "Task": {
       "type": "string"
+    },
+    "Photo": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

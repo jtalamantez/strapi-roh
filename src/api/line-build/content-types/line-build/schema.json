@@ -45,11 +45,11 @@
       "repeatable": true,
       "component": "allergens.allergens"
     },
-    "Location": {
+    "Locations": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::location.location",
-      "mappedBy": "line_build"
+      "mappedBy": "line_builds"
     }
   }
 }

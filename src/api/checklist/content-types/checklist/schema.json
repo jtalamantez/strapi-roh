@@ -20,12 +20,6 @@
       "repeatable": true,
       "component": "checklist.checklist"
     },
-    "locations": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::location.location",
-      "mappedBy": "checklist"
-    },
     "DayPart": {
       "type": "enumeration",
       "enum": [
@@ -35,6 +29,12 @@
         "LUNCH",
         "DINNER"
       ]
+    },
+    "locations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::location.location",
+      "mappedBy": "checklists"
     }
   }
 }

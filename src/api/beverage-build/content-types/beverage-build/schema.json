@@ -26,12 +26,6 @@
       "repeatable": true,
       "component": "allergens.allergens"
     },
-    "Location": {
-      "type": "relation",
-      "relation": "oneToMany",
-      "target": "api::location.location",
-      "mappedBy": "beverage_build"
-    },
     "Ingredients": {
       "type": "component",
       "repeatable": true,
@@ -63,6 +57,12 @@
         "Sphere Ice",
         "Moon Ice"
       ]
+    },
+    "Locations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::location.location",
+      "mappedBy": "beverage_builds"
     }
   }
 }

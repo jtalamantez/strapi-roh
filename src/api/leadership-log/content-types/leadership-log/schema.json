@@ -4,7 +4,8 @@
   "info": {
     "singularName": "leadership-log",
     "pluralName": "leadership-logs",
-    "displayName": "Leadership Log"
+    "displayName": "Leadership Log",
+    "description": ""
   },
   "options": {
     "draftAndPublish": true
@@ -19,6 +20,15 @@
       "type": "component",
       "repeatable": true,
       "component": "fields.fields"
+    },
+    "Email": {
+      "type": "string"
+    },
+    "locations": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::location.location",
+      "mappedBy": "leadership_logs"
     }
   }
 }
