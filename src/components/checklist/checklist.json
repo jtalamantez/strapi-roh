@@ -8,7 +8,7 @@
   "options": {},
   "attributes": {
     "Task": {
-      "type": "text"
+      "type": "string"
     }
   }
 }
