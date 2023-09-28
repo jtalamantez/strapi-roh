@@ -30,11 +30,11 @@
         "DINNER"
       ]
     },
-    "locations": {
+    "Locations": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::location.location",
-      "mappedBy": "checklists"
+      "inversedBy": "checklists"
     }
   }
 }

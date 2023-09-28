@@ -46,11 +46,11 @@
     "Method": {
       "type": "richtext"
     },
-    "locations": {
+    "Locations": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::location.location",
-      "mappedBy": "recipes"
+      "inversedBy": "recipes"
     }
   }
 }

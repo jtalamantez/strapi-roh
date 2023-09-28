@@ -21,12 +21,6 @@
       "target": "api::client.client",
       "inversedBy": "location"
     },
-    "checklists": {
-      "type": "relation",
-      "relation": "manyToMany",
-      "target": "api::checklist.checklist",
-      "inversedBy": "locations"
-    },
     "line_builds": {
       "type": "relation",
       "relation": "manyToMany",
@@ -54,13 +48,19 @@
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::recipe.recipe",
-      "inversedBy": "locations"
+      "mappedBy": "Locations"
     },
     "leadership_logs": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::leadership-log.leadership-log",
-      "inversedBy": "locations"
+      "mappedBy": "Locations"
+    },
+    "checklists": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::checklist.checklist",
+      "mappedBy": "Locations"
     }
   }
 }

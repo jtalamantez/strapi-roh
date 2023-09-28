@@ -24,11 +24,11 @@
     "Email": {
       "type": "string"
     },
-    "locations": {
+    "Locations": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::location.location",
-      "mappedBy": "leadership_logs"
+      "inversedBy": "leadership_logs"
     }
   }
 }
