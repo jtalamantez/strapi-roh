@@ -23,7 +23,7 @@
     },
     "Allergens": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "allergens.allergens"
     },
     "Ingredients": {

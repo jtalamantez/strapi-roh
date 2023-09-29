@@ -2,12 +2,46 @@
   "collectionName": "components_allergens_allergens",
   "info": {
     "displayName": "Allergens",
-    "icon": "information"
+    "icon": "information",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "Allergen": {
-      "type": "string"
+    "Allium": {
+      "type": "boolean"
+    },
+    "Avocado": {
+      "type": "boolean"
+    },
+    "Chilies": {
+      "type": "boolean"
+    },
+    "Chocolate": {
+      "type": "boolean"
+    },
+    "Dairy": {
+      "type": "boolean"
+    },
+    "Eggs": {
+      "type": "boolean"
+    },
+    "Gluten": {
+      "type": "boolean"
+    },
+    "Mushroom": {
+      "type": "boolean"
+    },
+    "Peanuts": {
+      "type": "boolean"
+    },
+    "Seasame": {
+      "type": "boolean"
+    },
+    "Soy": {
+      "type": "boolean"
+    },
+    "Wheat": {
+      "type": "boolean"
     }
   }
 }

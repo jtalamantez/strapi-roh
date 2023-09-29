@@ -2,12 +2,17 @@
   "collectionName": "components_fields_fields",
   "info": {
     "displayName": "Fields",
-    "icon": "bulletList"
+    "icon": "bulletList",
+    "description": ""
   },
   "options": {},
   "attributes": {
     "Name": {
       "type": "string"
+    },
+    "Textbox": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
