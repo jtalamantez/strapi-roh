@@ -13,6 +13,10 @@
     "Textbox": {
       "type": "boolean",
       "default": false
+    },
+    "Number": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
