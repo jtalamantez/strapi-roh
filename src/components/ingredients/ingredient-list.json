@@ -27,7 +27,10 @@
         "tbs",
         "TT",
         "turns",
-        "pinch"
+        "pinch",
+        "gal",
+        "drop",
+        "pkg"
       ],
       "default": "g"
     },
