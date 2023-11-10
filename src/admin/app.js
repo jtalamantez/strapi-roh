@@ -1,8 +1,9 @@
-import MenuLogo from './extensions/srl.png'
-import AuthLogo from './extensions/srl.png';
+import MenuLogo from './extensions/roh.png'
+import AuthLogo from './extensions/roh.png';
 
 export default {
     config: {
+        /*
         theme:{
             colors:{
                 primary100:"#ebc7b4",
@@ -16,6 +17,7 @@ export default {
                 buttonPrimary600: '#78462e',
             }
         },
+        */
         auth: {
             logo: AuthLogo,
         },
@@ -52,7 +54,7 @@ export default {
       ],
       translations: {
         en: {
-          'app.components.LeftMenu.navbrand.title': 'Snake River Lodge',
+          'app.components.LeftMenu.navbrand.title': 'Ring On Hook',
           "app.components.LeftMenu.navbrand.workplace": "Backend",
           "Auth.form.welcome.subtitle": "Log in to your account",
           "Auth.form.welcome.title": "",

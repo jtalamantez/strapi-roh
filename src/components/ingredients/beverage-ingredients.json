@@ -17,8 +17,16 @@
         "l",
         "g",
         "tsp",
-        "tbsp",
-        "To Fill"
+        "tbs",
+        "drop",
+        "drops",
+        "slices",
+        "swatch",
+        "leaves",
+        "wedges",
+        "scoop",
+        "hs",
+        "ea"
       ],
       "default": "oz"
     },

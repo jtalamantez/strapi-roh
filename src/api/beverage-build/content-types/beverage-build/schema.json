@@ -53,9 +53,7 @@
       "enum": [
         "Crushed",
         "Cubed",
-        "Big Ice Cube",
-        "Sphere Ice",
-        "Moon Ice"
+        "Crushed or Moon"
       ]
     },
     "Locations": {
