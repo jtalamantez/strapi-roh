@@ -15,8 +15,7 @@
     "Name": {
       "type": "string",
       "required": true,
-      "unique": true,
-      "regex": "^[A-Z\\s.,'\"]+$"
+      "unique": true
     },
     "Notes": {
       "type": "text"

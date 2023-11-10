@@ -9,7 +9,7 @@
     "Quantity": {
       "type": "decimal"
     },
-    "Unit": {
+    "Units": {
       "type": "enumeration",
       "enum": [
         "oz",
