@@ -1,0 +1,38 @@
+{
+  "collectionName": "components_diet_diets",
+  "info": {
+    "displayName": "Diet",
+    "icon": "cup"
+  },
+  "options": {},
+  "attributes": {
+    "Gluten": {
+      "type": "boolean",
+      "default": false
+    },
+    "Kosher": {
+      "type": "boolean",
+      "default": false
+    },
+    "Halal": {
+      "type": "boolean",
+      "default": false
+    },
+    "Paleo": {
+      "type": "boolean",
+      "default": false
+    },
+    "Pescatarian": {
+      "type": "boolean",
+      "default": false
+    },
+    "Vegan": {
+      "type": "boolean",
+      "default": false
+    },
+    "Vegetarian": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

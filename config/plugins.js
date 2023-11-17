@@ -6,5 +6,8 @@ module.exports = ({ env }) => ({
         // See `Config` section.
       },
     },
+    'filter-button': {
+        enabled: true,
+    },
     //...
   });

@@ -20,21 +20,19 @@
       "repeatable": true,
       "component": "checklist.checklist"
     },
-    "DayPart": {
-      "type": "enumeration",
-      "enum": [
-        "AM",
-        "PM",
-        "BRUNCH",
-        "LUNCH",
-        "DINNER"
-      ]
-    },
     "Locations": {
       "type": "relation",
       "relation": "manyToMany",
       "target": "api::location.location",
       "inversedBy": "checklists"
+    },
+    "Emails": {
+      "type": "text"
+    },
+    "Time": {
+      "type": "time",
+      "default": "12:00",
+      "required": true
     }
   }
 }

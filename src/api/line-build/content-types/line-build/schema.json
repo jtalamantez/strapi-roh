@@ -50,6 +50,12 @@
       "relation": "manyToMany",
       "target": "api::location.location",
       "mappedBy": "line_builds"
+    },
+    "Great": {
+      "type": "text"
+    },
+    "Watch": {
+      "type": "text"
     }
   }
 }
