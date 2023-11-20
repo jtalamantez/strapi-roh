@@ -30,7 +30,8 @@
         "pinch",
         "gal",
         "drop",
-        "pkg"
+        "pkg",
+        "can"
       ],
       "default": "g"
     },
