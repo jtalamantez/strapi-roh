@@ -7,41 +7,41 @@
   },
   "options": {},
   "attributes": {
-    "Allium": {
-      "type": "boolean"
-    },
-    "Avocado": {
-      "type": "boolean"
-    },
-    "Chilies": {
-      "type": "boolean"
-    },
-    "Chocolate": {
-      "type": "boolean"
-    },
     "Dairy": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "Eggs": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "Gluten": {
-      "type": "boolean"
-    },
-    "Mushroom": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "Peanuts": {
-      "type": "boolean"
-    },
-    "Seasame": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "Soy": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
     },
     "Wheat": {
-      "type": "boolean"
+      "type": "boolean",
+      "default": false
+    },
+    "Shellfish": {
+      "type": "boolean",
+      "default": false
+    },
+    "Fish": {
+      "type": "boolean",
+      "default": false
+    },
+    "Treenuts": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

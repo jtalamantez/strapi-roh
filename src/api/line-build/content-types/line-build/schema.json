@@ -42,7 +42,7 @@
     },
     "Allergen": {
       "type": "component",
-      "repeatable": true,
+      "repeatable": false,
       "component": "allergens.allergens"
     },
     "Locations": {
@@ -56,6 +56,11 @@
     },
     "Watch": {
       "type": "text"
+    },
+    "Diet": {
+      "type": "component",
+      "repeatable": false,
+      "component": "diet.diet"
     }
   }
 }
