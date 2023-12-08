@@ -27,10 +27,6 @@
       "type": "boolean",
       "default": false
     },
-    "Wheat": {
-      "type": "boolean",
-      "default": false
-    },
     "Shellfish": {
       "type": "boolean",
       "default": false
