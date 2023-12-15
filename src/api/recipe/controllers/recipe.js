@@ -38,7 +38,7 @@ module.exports = createCoreController('api::recipe.recipe',({strapi}) => ({
                   id: id,
                 },
                 data: {
-                  roh:false
+                  roh:true
                 },
             });
         }
