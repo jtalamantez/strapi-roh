@@ -3,15 +3,14 @@ import pluginPkg from '../../package.json';
 import pluginId from './pluginId';
 import Initializer from './components/Initializer';
 import PluginIcon from './components/PluginIcon';
-import ButtonTest from './components/ButtonTest';
-
+import HelloWorldButton from "./components/HelloWorldButton";
+import Snake from "./components/Snake";
 
 const name = pluginPkg.strapi.name;
 
 export default {
-    
-
   register(app) {
+    /*
     app.addMenuLink({
       to: `/plugins/${pluginId}`,
       icon: PluginIcon,
@@ -20,7 +19,8 @@ export default {
         defaultMessage: name,
       },
       Component: async () => {
-        const component = await import(/* webpackChunkName: "[request]" */ './pages/App');
+        //const component = await import(// webpackChunkName: "[request]" // './pages/App');
+
 
         return component;
       },
@@ -32,6 +32,7 @@ export default {
         // },
       ],
     });
+    */
     app.registerPlugin({
       id: pluginId,
       initializer: Initializer,
@@ -41,9 +42,13 @@ export default {
   },
 
   bootstrap(app) {
-    app.injectContentManagerComponent('listView','actions', {
-        name: 'ButtonTest',
-        component: ButtonTest,
+    app.injectContentManagerComponent("listView", "actions", {
+        name: "HelloWorldButton",
+        Component: HelloWorldButton,
+    });
+    app.injectContentManagerComponent("listView", "actions", {
+        name: "Snake",
+        Component: Snake,
     });
   },
   async registerTrads({ locales }) {

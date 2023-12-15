@@ -12,7 +12,7 @@ const HomePage = () => {
   return (
     <div>
       <h1>{pluginId}&apos;s HomePage</h1>
-      <p>Happy codings</p>
+      <p>Happy coding</p>
     </div>
   );
 };

@@ -1,12 +1,12 @@
 {
-  "name": "fullstack-filters",
+  "name": "filter",
   "version": "0.0.0",
   "description": "This is the description of the plugin.",
   "strapi": {
-    "name": "fullstack-filters",
-    "description": "Description of Fullstack Filters plugin",
+    "name": "filter",
+    "description": "Description of Filter plugin",
     "kind": "plugin",
-    "displayName": "Fullstack Filters"
+    "displayName": "Filter"
   },
   "dependencies": {
     "@strapi/design-system": "^1.6.3",

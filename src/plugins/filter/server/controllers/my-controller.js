@@ -3,7 +3,7 @@
 module.exports = ({ strapi }) => ({
   index(ctx) {
     ctx.body = strapi
-      .plugin('fullstack-filters')
+      .plugin('filter')
       .service('myService')
       .getWelcomeMessage();
   },

@@ -1,5 +1,5 @@
-import MenuLogo from './extensions/roh.png'
-import AuthLogo from './extensions/roh.png';
+import MenuLogo from './extensions/roh_gold.png'
+import AuthLogo from './extensions/roh_gold.png';
 
 export default {
     config: {
@@ -62,7 +62,8 @@ export default {
       },
     },
     
-    bootstrap() {},
+    bootstrap() {
+    },
 };
 
 

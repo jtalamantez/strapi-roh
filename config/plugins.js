@@ -6,12 +6,8 @@ module.exports = ({ env }) => ({
         // See `Config` section.
       },
     },
-    'filter-button': {
+    'filter': {
         enabled: true,
-    },
-    "fullstack-filters": {
-        enabled: false,
-        resolve: "./src/plugins/fullstack-filters", // path to plugin folder
+        resolve: './src/plugins/filter'
       },
-    //...
   });

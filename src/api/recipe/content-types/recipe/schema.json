@@ -36,12 +36,6 @@
         "audios"
       ]
     },
-    "Tags": {
-      "displayName": "Tags",
-      "type": "component",
-      "repeatable": true,
-      "component": "tags.tags"
-    },
     "Method": {
       "type": "richtext"
     },
@@ -55,6 +49,10 @@
       "type": "component",
       "repeatable": false,
       "component": "allergens.allergens"
+    },
+    "roh": {
+      "type": "boolean",
+      "default": true
     }
   }
 }
