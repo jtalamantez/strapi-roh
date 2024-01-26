@@ -14,7 +14,7 @@ module.exports = ({ env }) => ({
         config: {
           provider: 'local',
           providerOptions: {
-            sizeLimit: 100000000,
+            sizeLimit: 100000000, //these are in bytes
           },
         },
       },
