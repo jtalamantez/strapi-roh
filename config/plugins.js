@@ -10,6 +10,14 @@ module.exports = ({ env }) => ({
         enabled: true,
         resolve: './src/plugins/filter'
     },
+    upload: {
+        config: {
+          provider: 'local',
+          providerOptions: {
+            sizeLimit: 100000000,
+          },
+        },
+      },
   });
   
 
