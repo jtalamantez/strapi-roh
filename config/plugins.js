@@ -16,7 +16,7 @@ module.exports = ({ env }) => ({
         config: {
           provider: 'aws-s3',
           providerOptions: {
-            accessKeyId: 'AAKIA47CR3GF3236BWWDN',
+            accessKeyId: 'AKIA47CR3GF3236BWWDN',
             secretAccessKey: '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',
             region: 'us-east-1',
             params: {
