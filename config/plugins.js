@@ -1,3 +1,5 @@
+//pulling from .env file
+
 module.exports = ({ env }) => ({
     //...
     'import-export-entries': {
