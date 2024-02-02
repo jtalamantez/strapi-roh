@@ -34,13 +34,22 @@ const Snake = () => {
     }
 
   return (
+    <>
     <Button
       variant="secondary"
       startIcon={<Link />}
       onClick={() => buttonClick()}
     >
-      Add to SRL
+      SRL
     </Button>
+    <Button
+      variant="secondary"
+      startIcon={<Link />}
+      onClick={() => buttonClick()}
+    >
+      Other
+    </Button>
+    </>
   );
 };
 
