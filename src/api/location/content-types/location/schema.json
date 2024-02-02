@@ -62,9 +62,9 @@
       "target": "api::checklist.checklist",
       "mappedBy": "Locations"
     },
-    "user": {
+    "users": {
       "type": "relation",
-      "relation": "manyToOne",
+      "relation": "manyToMany",
       "target": "plugin::users-permissions.user",
       "inversedBy": "locations"
     }

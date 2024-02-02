@@ -45,14 +45,9 @@
       "target": "api::location.location",
       "inversedBy": "recipes"
     },
-    "Allergens": {
-      "type": "component",
-      "repeatable": false,
-      "component": "allergens.allergens"
-    },
     "roh": {
       "type": "boolean",
-      "default": true
+      "default": false
     }
   }
 }

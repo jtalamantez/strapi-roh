@@ -67,9 +67,15 @@
     },
     "locations": {
       "type": "relation",
-      "relation": "oneToMany",
+      "relation": "manyToMany",
       "target": "api::location.location",
-      "mappedBy": "user"
+      "mappedBy": "users"
+    },
+    "Name": {
+      "type": "string"
+    },
+    "Company": {
+      "type": "string"
     }
   }
 }
