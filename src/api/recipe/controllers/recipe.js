@@ -24,7 +24,7 @@ module.exports = createCoreController('api::recipe.recipe',({strapi}) => ({
     },
 
 
-
+    //MAKE SOMETRHING AS ROH TRUE
     async customAction(ctx) {
 
         //GEt post va
@@ -66,9 +66,14 @@ module.exports = createCoreController('api::recipe.recipe',({strapi}) => ({
         const body = ctx.request.body
         const ids = body.ids
         const location = body.location
+
+        console.log("Location: ", location) 
+        console.log("IDS: ", ids)
+
         //const ids = [147, 148, 149]
         //Loop over ids and update
         for (const id of ids) {
+            console.log("ID: ", id)
             await strapi.db.query("api::recipe.recipe").update({
                 where: {
                   id: id,

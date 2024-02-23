@@ -34,11 +34,12 @@ const Snake = () => {
         })
         console.log("Selected ids: ", ids) 
         //If this is ROH it goes to a seperate backend (formally Make ROH Original)
+        const localUrlBase = 'http://localhost:1337/api/'
         const urlBase = 'https://roh-backend-rd8bg.ondigitalocean.app/api/'
         const endpoint = (value === "14") ? 'custom' : 'snake'
 
         //Call the backend API
-        const response = await fetch('https://roh-backend-rd8bg.ondigitalocean.app/api/snake', {
+        const response = await fetch(urlBase+endpoint, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
