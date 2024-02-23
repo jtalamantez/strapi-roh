@@ -1,12 +1,36 @@
 import React from "react";
-import { Button } from "@strapi/design-system";
+import { useState } from "react";
+import { Button, SingleSelect, SingleSelectOption } from "@strapi/design-system";
+
 import {Seed} from "@strapi/icons";
-//import { useCMEditViewDataManager, useQueryParams } from "@strapi/helper-plugin";
+
+/*
+import { useCMEditViewDataManager } from '@strapi/helper-plugin'; // FOR IMPORT
+const { allLayoutData, modifiedData } = useCMEditViewDataManager();
+const { uid } = allLayoutData.contentType;
+*/
 
 
 const HelloWorldButton = () => {
 
+    const excludedPagePaths = [
+        "/admin/content-manager/collectionType/api::client.client",
+        "/admin/content-manager/collectionType/api::location.location",
+        "/admin/content-manager/collectionType/plugin::users-permissions.user",
+        
+    ];
+
+
+      // Don't render the component if the current page is the excluded page
+      if (excludedPagePaths.includes(window.location.pathname)) {
+        return null;
+    }
+
     const buttonClick = async () => {
+
+      console.log("HEY YTRTEST")
+
+
         let ids = []
         document.querySelectorAll('input[type="checkbox"]:checked').forEach(c => {
             //Find the nearest 'th' parent element
@@ -39,8 +63,10 @@ const HelloWorldButton = () => {
       startIcon={<Seed />}
       onClick={() => buttonClick()}
     >
-      Make ROH Original
+      Make ROH 
     </Button>
+
+
   );
 };
 

@@ -22,9 +22,9 @@
     },
     "location": {
       "type": "relation",
-      "relation": "oneToOne",
+      "relation": "manyToOne",
       "target": "api::location.location",
-      "mappedBy": "client"
+      "inversedBy": "clients"
     }
   }
 }

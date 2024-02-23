@@ -65,6 +65,7 @@ module.exports = createCoreController('api::recipe.recipe',({strapi}) => ({
         //GEt post va
         const body = ctx.request.body
         const ids = body.ids
+        const location = body.location
         //const ids = [147, 148, 149]
         //Loop over ids and update
         for (const id of ids) {
@@ -73,7 +74,7 @@ module.exports = createCoreController('api::recipe.recipe',({strapi}) => ({
                   id: id,
                 },
                 data: {
-                  Locations: [7]
+                  Locations: [location]
                 },
             });
         }

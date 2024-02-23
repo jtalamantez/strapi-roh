@@ -9,6 +9,7 @@ import Snake from "./components/Snake";
 const name = pluginPkg.strapi.name;
 
 export default {
+    
   register(app) {
     /*
     app.addMenuLink({
@@ -42,10 +43,13 @@ export default {
   },
 
   bootstrap(app) {
+
+    /*
     app.injectContentManagerComponent("listView", "actions", {
         name: "HelloWorldButton",
         Component: HelloWorldButton,
     });
+    */
     app.injectContentManagerComponent("listView", "actions", {
         name: "Snake",
         Component: Snake,
