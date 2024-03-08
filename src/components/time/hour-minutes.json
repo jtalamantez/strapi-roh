@@ -1,0 +1,9 @@
+{
+  "collectionName": "components_time_hour_minutes",
+  "info": {
+    "displayName": "HourMinutes",
+    "icon": "clock"
+  },
+  "options": {},
+  "attributes": {}
+}

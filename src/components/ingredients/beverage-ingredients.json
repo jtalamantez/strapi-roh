@@ -35,6 +35,11 @@
     },
     "Item": {
       "type": "string"
+    },
+    "Beverage": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::beverage-build.beverage-build"
     }
   }
 }
