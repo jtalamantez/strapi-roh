@@ -36,7 +36,9 @@ const Snake = () => {
         //If this is ROH it goes to a seperate backend (formally Make ROH Original)
         const localUrlBase = 'http://localhost:1337/api/'
         const urlBase = 'https://roh-backend-rd8bg.ondigitalocean.app/api/'
-        const endpoint = (value === "14") ? 'custom' : 'snake'
+        // removed this 3/8 when James noticed it wasn't changing the locations to ROH -->
+        //const endpoint = (value === "14") ? 'custom' : 'snake'
+        const endpoint = 'snake'
 
         //Call the backend API
         const response = await fetch(urlBase+endpoint, {
