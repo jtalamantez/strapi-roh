@@ -76,6 +76,9 @@
     },
     "Company": {
       "type": "string"
+    },
+    "Manager": {
+      "type": "boolean"
     }
   }
 }
