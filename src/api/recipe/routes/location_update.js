@@ -2,8 +2,8 @@ module.exports = {
     routes: [
         {
             method: 'POST',
-            path: '/snake',
-            handler: 'recipe.snake',
+            path: '/location_update',
+            handler: 'recipe.location_update',
             config: {
                 auth:false
             },

@@ -60,8 +60,7 @@ module.exports = createCoreController('api::recipe.recipe',({strapi}) => ({
     },
 
 
-    async snake(ctx) {
-
+    async location_updateSINGLE_LOC_REMOVE(ctx) {
         //GEt post va
         const body = ctx.request.body
         const ids = body.ids
@@ -83,11 +82,67 @@ module.exports = createCoreController('api::recipe.recipe',({strapi}) => ({
                 },
             });
         }
-        
-       
-     
         return body
     },
+
+    async location_update(ctx) {
+        const body = ctx.request.body
+        const ids = body.ids
+        const location = body.location
+        const page = body.page
+        let dbType = "api::recipe.recipe"
+
+        switch (page) {
+            case "recipe":
+                dbType = "api::recipe.recipe"
+                break;
+            case "beverage-build":
+                dbType = "api::beverage-build.beverage-build"
+                break;
+            case "line-build":
+                dbType = "api::line-build.line-build"
+                break;
+            case "checklist":
+                dbType = "api::checklist.checklist"
+                break;
+        }
+
+        console.log("Location: ", location) 
+        console.log("IDS: ", ids)
+        console.log("page: ", page)
+        console.log("dbType: ", dbType)
+
+
+        for (const id of ids) {
+            console.log("ID: ", id)
+
+            // Fetch the existing locations
+            const existingEntry = await strapi.db.query(dbType).findOne({
+                where: {
+                  id: id,
+                },
+                populate: ['Locations'],
+            });
+
+            console.log("EXISTING ENTRY: ", existingEntry)
+
+            // Append the new location to the existing ones
+            const updatedLocations = [...existingEntry.Locations, location];
+
+            // Update the database with the new array of locations
+            await strapi.db.query(dbType).update({
+                where: {
+                  id: id,
+                },
+                data: {
+                  Locations: updatedLocations
+                },
+            });
+        }
+        return body
+    },
+
+
 
    
 

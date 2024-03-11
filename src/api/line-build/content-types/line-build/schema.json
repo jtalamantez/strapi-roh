@@ -61,6 +61,11 @@
       "type": "component",
       "repeatable": false,
       "component": "diet.diet"
+    },
+    "Tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "tags.tags"
     }
   }
 }

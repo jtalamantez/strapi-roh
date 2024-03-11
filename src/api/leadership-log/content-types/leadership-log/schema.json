@@ -29,6 +29,9 @@
       "relation": "manyToMany",
       "target": "api::location.location",
       "inversedBy": "leadership_logs"
+    },
+    "Time": {
+      "type": "time"
     }
   }
 }

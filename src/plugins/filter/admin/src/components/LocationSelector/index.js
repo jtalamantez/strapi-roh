@@ -5,7 +5,7 @@ import {Link} from "@strapi/icons";
 //import { useCMEditViewDataManager, useQueryParams } from "@strapi/helper-plugin";
 
 
-const Snake = () => {
+const LocationSelector = () => {
     const excludedPagePaths = [
         "/admin/content-manager/collectionType/api::client.client",
         "/admin/content-manager/collectionType/api::location.location",
@@ -14,10 +14,20 @@ const Snake = () => {
     ];
 
 
-      // Don't render the component if the current page is the excluded page
-      if (excludedPagePaths.includes(window.location.pathname)) {
+    // Don't render the component if the current page is the excluded page
+    if (excludedPagePaths.includes(window.location.pathname)) {
         return null;
     }
+
+
+    const getCurrentPage = () => {
+        const urlParts = window.location.pathname.split("/");
+        const page = urlParts[urlParts.length - 1];
+        const pageParts = page.split(".");
+        return pageParts[pageParts.length - 1];
+    }
+    
+
 
     const [value, setValue] = useState();
 
@@ -32,21 +42,30 @@ const Snake = () => {
             let idVal = td.querySelector('span').textContent
             ids.push(idVal)
         })
+        // If no ids were found, return
+        if (ids.length === 0) {
+            alert("No rows have been selected or the ID column is not visible.")
+            return;
+        }
         console.log("Selected ids: ", ids) 
         //If this is ROH it goes to a seperate backend (formally Make ROH Original)
         const localUrlBase = 'http://localhost:1337/api/'
         const urlBase = 'https://roh-backend-rd8bg.ondigitalocean.app/api/'
         // removed this 3/8 when James noticed it wasn't changing the locations to ROH -->
         //const endpoint = (value === "14") ? 'custom' : 'snake'
-        const endpoint = 'snake'
+        const endpoint = 'location_update'
 
+        const page = getCurrentPage();
+        console.log(page); // This will log the current page to the console
+
+        
         //Call the backend API
-        const response = await fetch(urlBase+endpoint, {
+        const response = await fetch(localUrlBase+endpoint, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
             },
-            body: JSON.stringify({ids: ids, location: value})
+            body: JSON.stringify({ids: ids, location: value, page: page})
         })
         const data = await response.json()
         console.log("RESPON SE",data)
@@ -79,4 +98,4 @@ const Snake = () => {
   );
 };
 
-export default Snake;
+export default LocationSelector;

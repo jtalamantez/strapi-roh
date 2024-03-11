@@ -48,6 +48,11 @@
     "roh": {
       "type": "boolean",
       "default": false
+    },
+    "Tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "tags.tags"
     }
   }
 }

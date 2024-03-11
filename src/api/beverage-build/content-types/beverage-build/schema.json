@@ -65,6 +65,11 @@
       "relation": "manyToMany",
       "target": "api::location.location",
       "mappedBy": "beverage_builds"
+    },
+    "Tags": {
+      "type": "component",
+      "repeatable": true,
+      "component": "tags.tags"
     }
   }
 }
