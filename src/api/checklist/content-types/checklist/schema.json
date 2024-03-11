@@ -29,7 +29,7 @@
     "Emails": {
       "type": "text"
     },
-    "Time": {
+    "Time2": {
       "type": "enumeration",
       "enum": [
         "AM 12:00",
@@ -81,6 +81,9 @@
         "PM 11:00",
         "PM 11:30"
       ]
+    },
+    "Time": {
+      "type": "time"
     }
   }
 }
