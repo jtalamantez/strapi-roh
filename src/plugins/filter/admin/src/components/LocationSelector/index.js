@@ -60,7 +60,7 @@ const LocationSelector = () => {
 
         
         //Call the backend API
-        const response = await fetch(localUrlBase+endpoint, {
+        const response = await fetch(urlBase+endpoint, {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
