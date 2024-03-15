@@ -38,9 +38,12 @@ const LocationSelector = () => {
             let tr = c.closest('tr');
             //Now get the th inside the tr with aria-colindex="2"
             let td = tr.querySelector('td[aria-colindex="2"]');
-            //Now get the text value of the span element inside the td
-            let idVal = td.querySelector('span').textContent
-            ids.push(idVal)
+            if(td){
+                //Now get the text value of the span element inside the td
+                let idVal = td.querySelector('span').textContent
+                console.log(idVal)
+                ids.push(idVal)
+            }
         })
         // If no ids were found, return
         if (ids.length === 0) {
