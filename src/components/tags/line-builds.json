@@ -1,0 +1,37 @@
+{
+  "collectionName": "components_tags_line_builds",
+  "info": {
+    "displayName": "Line Builds"
+  },
+  "options": {},
+  "attributes": {
+    "Apps": {
+      "type": "boolean",
+      "default": false
+    },
+    "Soups": {
+      "type": "boolean",
+      "default": false
+    },
+    "Salads": {
+      "type": "boolean",
+      "default": false
+    },
+    "Handhelds": {
+      "type": "boolean",
+      "default": false
+    },
+    "Bowls": {
+      "type": "boolean",
+      "default": false
+    },
+    "Entrees": {
+      "type": "boolean",
+      "default": false
+    },
+    "Sides": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

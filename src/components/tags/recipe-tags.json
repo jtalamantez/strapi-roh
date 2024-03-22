@@ -1,0 +1,33 @@
+{
+  "collectionName": "components_tags_recipe_tags",
+  "info": {
+    "displayName": "Recipe Tags"
+  },
+  "options": {},
+  "attributes": {
+    "Stocks": {
+      "type": "boolean",
+      "default": false
+    },
+    "Meats": {
+      "type": "boolean",
+      "default": false
+    },
+    "Vegetables": {
+      "type": "boolean",
+      "default": false
+    },
+    "Breakfast": {
+      "type": "boolean",
+      "default": false
+    },
+    "Garde": {
+      "type": "boolean",
+      "default": false
+    },
+    "Baking": {
+      "type": "boolean",
+      "default": false
+    }
+  }
+}

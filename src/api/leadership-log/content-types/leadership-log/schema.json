@@ -31,7 +31,8 @@
       "inversedBy": "leadership_logs"
     },
     "Time": {
-      "type": "time"
+      "type": "time",
+      "default": "00:00"
     }
   }
 }

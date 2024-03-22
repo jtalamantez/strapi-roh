@@ -1,13 +1,55 @@
 {
   "collectionName": "components_tags_tags",
   "info": {
-    "displayName": "Tags",
-    "icon": "priceTag"
+    "displayName": "Beverage Tags",
+    "icon": "priceTag",
+    "description": ""
   },
   "options": {},
   "attributes": {
-    "tag": {
-      "type": "string"
+    "Vodka": {
+      "type": "boolean",
+      "default": false
+    },
+    "Gin": {
+      "type": "boolean",
+      "default": false
+    },
+    "Tequila": {
+      "type": "boolean",
+      "default": false
+    },
+    "Whiskey": {
+      "type": "boolean",
+      "default": false
+    },
+    "Rum": {
+      "type": "boolean",
+      "default": false
+    },
+    "Mezcal": {
+      "type": "boolean",
+      "default": false
+    },
+    "Scotch": {
+      "type": "boolean",
+      "default": false
+    },
+    "Liqueur": {
+      "type": "boolean",
+      "default": false
+    },
+    "Prep": {
+      "type": "boolean",
+      "default": false
+    },
+    "Coffee": {
+      "type": "boolean",
+      "default": false
+    },
+    "Juice": {
+      "type": "boolean",
+      "default": false
     }
   }
 }

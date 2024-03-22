@@ -31,7 +31,8 @@
     },
     "Time": {
       "type": "time",
-      "required": true
+      "required": true,
+      "default": "00:00"
     }
   }
 }

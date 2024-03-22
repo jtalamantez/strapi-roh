@@ -51,8 +51,8 @@
     },
     "Tags": {
       "type": "component",
-      "repeatable": true,
-      "component": "tags.tags"
+      "repeatable": false,
+      "component": "tags.recipe-tags"
     }
   }
 }
