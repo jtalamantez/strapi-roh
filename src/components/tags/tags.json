@@ -50,6 +50,10 @@
     "Juice": {
       "type": "boolean",
       "default": false
+    },
+    "Spirit": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
