@@ -82,13 +82,21 @@ const LocationSelector = () => {
     <SingleSelect placeholder="Location" style={{width:200}} onClear={() => {
       setValue(undefined);
     }} value={value} onChange={setValue}>
-        <SingleSelectOption value="15">600 W Chicago</SingleSelectOption>
-        <SingleSelectOption value="11">Alpenof</SingleSelectOption>
+        <SingleSelectOption value="11">Alpenof Lodge</SingleSelectOption>
+        <SingleSelectOption value="15">Catalogue House</SingleSelectOption>
+        <SingleSelectOption value="19">Club Quarters Hotels</SingleSelectOption>
+        <SingleSelectOption value="22">Faraway, MV</SingleSelectOption>
         <SingleSelectOption value="13">Goodsurf</SingleSelectOption>
         <SingleSelectOption value="5">Home Run Dugout</SingleSelectOption>
+        <SingleSelectOption value="20">Newes Of America</SingleSelectOption>
+        <SingleSelectOption value="16">Pelican Club</SingleSelectOption>
         <SingleSelectOption value="14">Ring On Hook</SingleSelectOption>
         <SingleSelectOption value="7">Snake River Lodge</SingleSelectOption>
+        <SingleSelectOption value="18">Sofia's</SingleSelectOption>
+        <SingleSelectOption value="21">Tacolisto</SingleSelectOption>
         <SingleSelectOption value="12">Victory Ranch</SingleSelectOption>
+        <SingleSelectOption value="17">Yardsale</SingleSelectOption>
+
       </SingleSelect>
     <Button
       variant="secondary"
