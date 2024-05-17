@@ -55,9 +55,13 @@
     "Ice": {
       "type": "enumeration",
       "enum": [
-        "Crushed",
         "Cubed",
-        "Crushed or Moon"
+        "Crushed",
+        "Large Cube",
+        "Pebble",
+        "Moon",
+        "Shaved",
+        "Neat/Up"
       ]
     },
     "Locations": {

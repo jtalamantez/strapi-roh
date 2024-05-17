@@ -54,6 +54,14 @@
     "Spirit": {
       "type": "boolean",
       "default": false
+    },
+    "Beer": {
+      "type": "boolean",
+      "default": false
+    },
+    "Wine": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
