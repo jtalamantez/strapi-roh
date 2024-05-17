@@ -15,6 +15,7 @@ module.exports = [
                 'blob:',
                 'dl.airtable.com',
                 'strapi-latest-131.s3.us-east-1.amazonaws.com',
+                'res.cloudinary.com'
               ],
               'media-src': [
                 "'self'",
@@ -22,6 +23,7 @@ module.exports = [
                 'blob:',
                 'dl.airtable.com',
                 'strapi-latest-131.s3.us-east-1.amazonaws.com',
+                'res.cloudinary.com'
               ],
               upgradeInsecureRequests: null,
             },
