@@ -62,6 +62,14 @@
     "Wine": {
       "type": "boolean",
       "default": false
+    },
+    "Frozen": {
+      "type": "boolean",
+      "default": false
+    },
+    "Batch": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
