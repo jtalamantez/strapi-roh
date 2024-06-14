@@ -38,6 +38,10 @@
     "Treenuts": {
       "type": "boolean",
       "default": false
+    },
+    "Sesame": {
+      "type": "boolean",
+      "default": false
     }
   }
 }
