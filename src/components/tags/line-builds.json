@@ -1,7 +1,8 @@
 {
   "collectionName": "components_tags_line_builds",
   "info": {
-    "displayName": "Line Builds"
+    "displayName": "Line Builds",
+    "description": ""
   },
   "options": {},
   "attributes": {
@@ -30,6 +31,10 @@
       "default": false
     },
     "Sides": {
+      "type": "boolean",
+      "default": false
+    },
+    "Desserts": {
       "type": "boolean",
       "default": false
     }
